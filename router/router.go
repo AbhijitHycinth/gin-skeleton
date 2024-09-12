@@ -1,11 +1,12 @@
 package router
 
 import (
+	"github.com/gin-skeleton/controller"
+	"github.com/gin-skeleton/middleware"
+	"github.com/gin-skeleton/model"
+
 	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/controller"
-	"github.com/hyperjiang/gin-skeleton/middleware"
-	"github.com/hyperjiang/gin-skeleton/model"
 )
 
 // Route makes the routing

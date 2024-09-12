@@ -2,7 +2,7 @@
 
 sm=$(which "sql-migrate")
 if [ -z $sm ]; then
-    go get -u github.com/go-sql-driver/mysql
+    go get -u github.com/go-sql-driver/postgres
     go get github.com/rubenv/sql-migrate/...
 fi
 

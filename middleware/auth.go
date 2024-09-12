@@ -4,9 +4,10 @@ import (
 	"log"
 	"time"
 
+	"github.com/gin-skeleton/model"
+
 	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/model"
 )
 
 var authMiddleware *jwt.GinJWTMiddleware
@@ -26,7 +27,7 @@ func Auth() *jwt.GinJWTMiddleware {
 func init() {
 	var err error
 	authMiddleware, err = jwt.New(&jwt.GinJWTMiddleware{
-		Realm:       "gin-skeleton",
+		Realm:       "github.com/gin-skeleton",
 		Key:         []byte("secret key"),
 		Timeout:     time.Hour,
 		MaxRefresh:  time.Hour,

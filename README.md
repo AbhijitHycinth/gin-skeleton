@@ -1,4 +1,4 @@
-# gin-skeleton
+# github.com/gin-skeleton
 
 [![CI](https://github.com/hyperjiang/gin-skeleton/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/hyperjiang/gin-skeleton/actions/workflows/ci.yml)
 [![Go Report](https://goreportcard.com/badge/github.com/hyperjiang/gin-skeleton)](https://goreportcard.com/report/github.com/hyperjiang/gin-skeleton)

@@ -1,0 +1,7 @@
+vendor/
+infra/
+.github
+sql/
+doc/
+database/
+docker-compose.yml

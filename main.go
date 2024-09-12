@@ -5,9 +5,10 @@ import (
 	"log"
 	"path/filepath"
 
+	"github.com/gin-skeleton/config"
+	"github.com/gin-skeleton/router"
+
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/config"
-	"github.com/hyperjiang/gin-skeleton/router"
 )
 
 func main() {

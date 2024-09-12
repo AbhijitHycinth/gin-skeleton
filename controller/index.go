@@ -3,8 +3,9 @@ package controller
 import (
 	"net/http"
 
+	"github.com/gin-skeleton/config"
+
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/config"
 )
 
 // IndexController is the default controller

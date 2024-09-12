@@ -7,8 +7,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/gin-skeleton/config"
+
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/config"
 	"github.com/stretchr/testify/suite"
 )
 

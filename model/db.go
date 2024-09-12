@@ -3,10 +3,11 @@ package model
 import (
 	"sync"
 
+	"github.com/gin-skeleton/config"
+
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/config"
 	"github.com/rs/zerolog/log"
-	"gorm.io/driver/mysql"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 )
@@ -40,7 +41,7 @@ func dbInit() any {
 		Logger: logger.Default.LogMode(lv),
 	}
 
-	db, err := gorm.Open(mysql.Open(config.Database.DSN), cfg)
+	db, err := gorm.Open(postgres.Open(config.Database.DSN), cfg)
 	if err != nil {
 		log.Fatal().Err(err).Msg("Cannot connect to database")
 	}

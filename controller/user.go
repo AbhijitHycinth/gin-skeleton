@@ -3,8 +3,9 @@ package controller
 import (
 	"net/http"
 
+	"github.com/gin-skeleton/model"
+
 	"github.com/gin-gonic/gin"
-	"github.com/hyperjiang/gin-skeleton/model"
 )
 
 // UserController is the user controller

@@ -1,0 +1,23 @@
+version: "3"
+services:
+  gin-app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: ./infra/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    depends_on:
+       - postgresql
+
+  postgresql:
+    container_name: db
+    image: postgres:12.9
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dbname
+    ports:
+     - "5432:5432"
